@@ -5,10 +5,10 @@ import java.lang.reflect.Type
 
 class GsonParser(private val gson:Gson):JsonParser {
     override fun <T> fromJson(json: String, type: Type): T? {
-        TODO("Not yet implemented")
+        return gson.fromJson(json, type)
     }
 
     override fun <T> toJson(obj: T, type: Type): String? {
-        TODO("Not yet implemented")
+        return gson.toJson(obj, type)
     }
 }

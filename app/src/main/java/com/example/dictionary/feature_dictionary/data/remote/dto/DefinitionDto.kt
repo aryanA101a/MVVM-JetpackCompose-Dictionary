@@ -9,6 +9,6 @@ data class DefinitionDto(
     val synonyms: List<Any>
 ) {
     fun toDefinition(): Definition {
-        return Definition(antonyms, definition, example, synonyms)
+        return Definition(antonyms, definition, example?:"", synonyms)
     }
 }
